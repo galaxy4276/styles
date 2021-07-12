@@ -2,6 +2,7 @@ import { Configuration } from 'webpack';
 import { join } from 'path';
 
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import 'webpack-dev-server';
 
 type DevServer = {
   devServer: {

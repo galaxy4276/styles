@@ -20,10 +20,12 @@
     "cross-env": "^7.0.3",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    "start": "cross-env TS_NODE_PROJECT=\"tsconfig.json\" webpack"
+    "build": "cross-env TS_NODE_PROJECT=\"tsconfig.json\" webpack",
+    "dev": "cross-env TS_NODE_PROJECT=\"tsconfig.json\" webpack serve"
   },
   "keywords": [],
   "author": "",
