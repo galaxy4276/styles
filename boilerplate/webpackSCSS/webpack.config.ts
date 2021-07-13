@@ -2,6 +2,7 @@ import { Configuration } from 'webpack';
 import { join } from 'path';
 
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import 'webpack-dev-server';
 
 type DevServer = {
@@ -38,7 +39,7 @@ const config: Configuration & DevServer = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader',
         ],
@@ -49,6 +50,9 @@ const config: Configuration & DevServer = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
+    }),
+    new MiniCssExtractPlugin({
+      filename: './styles.css',
     }),
   ],
   devServer: {
