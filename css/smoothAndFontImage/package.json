@@ -1,0 +1,35 @@
+{
+  "name": "webpackSCSS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "sass": "^1.35.2",
+    "style-loader": "^3.1.0",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.44.0"
+  },
+  "devDependencies": {
+    "@types/mini-css-extract-plugin": "^2.0.1",
+    "@types/node": "^16.3.1",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-dev-server": "^3.11.5",
+    "cross-env": "^7.0.3",
+    "mini-css-extract-plugin": "^2.1.0",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "build": "cross-env TS_NODE_PROJECT=\"tsconfig.json\" webpack",
+    "dev": "cross-env TS_NODE_PROJECT=\"tsconfig.json\" webpack serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

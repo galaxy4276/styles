@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  top: 10%;
+  position: fixed;
+  left: 1rem;
+  text-align: center;
+  color: #3c3c3c;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn + .btn {
+  margin-top: 1rem;
+}
+
+.circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: .2s;
+  &:hover {
+    filter: invert(100%);
+    transform: scale(1.2);
+  }
+}
+
+.circle.spring {
+    background-color: pink;
+}
+
+.circle.summer {
+  background-color: skyblue;
+}
+.circle.fall {
+  background-color: orange;
+}
+.circle.winter {
+  background-color: grey;
+}
+
+.text {
+  font-family: "Bungee", cursive;
+  font-size: 5rem;
+  margin: 0;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: cover;
+  background-position: center;
+}
+
+.text.spring {
+  background-image: url("https://i0.wp.com/sharehows.com/wp-content/uploads/2017/03/spring-festival-0.png?fit=800%2C400&ssl=1");
+}
+.text.summer {
+  background-image: url("https://travelblog.expedia.co.kr/wp-content/uploads/2016/05/111.jpg");
+}
+.text.fall {
+  background-image: url("https://img7.yna.co.kr/mpic/YH/2019/11/03/MYH20191103008000038_P4.jpg");
+}
+.text.winter {
+  background-image: url("https://deepersonar.com/media/ves/blog/winter-frozen-water_24.jpg");
+}
